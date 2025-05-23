@@ -3,27 +3,16 @@
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
     <script src="https://supereggbert.github.io/aframe-htmlembed-component/dist/build.js"></script>
 
-    <style>
-      .word {
-        height: 100px; width: 200px; text-align: center; padding: 0 0;
-                border:2px solid black;
-      }
-    </style>
+    
   </head>
-  
-        <a-mixin id="brick"<body>
-    <a-scene xr-mode-ui="XRMode: xr"
-        webxr="optionalFeatures: hit-test, local-floor"
-        ar-hit-test="target:#plane"
-        reflection="directionalLight:#real-light"
-        renderer="colorManagement:true;
-            exposure:1; toneMapping:ACESFilmic;"
-        obb-collider="showColliders: false">
+
+<body>
+    <a-scene>
 
       <a-assets>
-         <a-assets-item id=""mesa" src="mesa_circular.glb"></a-assets-item>
+         <a-asset-item id=""mesa" src="mesa_circular.glb"></a-asset-item>
       </a-assets>
-      <a-entity gltf-model="#mesa"position"0 0 -3"></a-entity>
+      <a-entity gltf-model="#mesa" position"0 0 -3"></a-entity>
 
       <a-plane id="plane" position="0 0.75 -0.5" rotation="-90 0 0" width="1" height="0.6"
           color="blue">
